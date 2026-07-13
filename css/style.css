@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'poppins';
+}
+
+body {
+  background: #f4f6fb;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background: #fff;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #666;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  background: #f4f7ff;
+  color: #1976d2;
+}
+
+.menu a.active {
+  color: #1976d2;
+  font-weight: 600;
+  background: #eef5ff;
+  border-left: 3px solid #1976d2;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 70px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bookBtn {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  padding: 11px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#bookBtn:hover {
+  background: #1565c0;
+}
+

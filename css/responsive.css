@@ -1,0 +1,53 @@
+*{
+  font-family:'poppins';
+}
+@media (max-width: 992px) {
+  .sidebar {
+    width: 80px;
+  }
+
+  .menu a span:last-child {
+    display: none;
+  }
+
+  .logo {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .logo img {
+    width: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: 70px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu {
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .header {
+    padding: 10px;
+  }
+
+  .calendar-wrapper {
+    padding: 10px;
+    overflow: auto;
+  }
+}

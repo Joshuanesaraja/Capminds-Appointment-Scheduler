@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!-- icon -->
+    <link rel="icon" href="../images/icons/appointment.png">
+    <title>Capminds Dashboard</title>
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manufacturing+Consent&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="logo">
+          <img src="../images/logo.png" alt="Logo" />
+        </div>
+
+        <div class="menu">
+          <a href="index.html">
+            <span><i class="fa-regular fa-calendar"></i></span>
+            <span>Calendar</span>
+          </a>
+
+          <a class="active">
+            <span><i class="fa-solid fa-grip"></i></span>
+            <span>Dashboard</span>
+          </a>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="header">
+          <h2>Appointments Dashboard</h2>
+        </header>
+
+        <section class="dashboard">
+          <div class="filters">
+            <input
+              type="text"
+              id="patientSearch"
+              placeholder="Search Patient"
+            />
+
+            <input type="text" id="doctorSearch" placeholder="Search Doctor" />
+
+            <input type="date" id="fromDate" />
+
+            <input type="date" id="toDate" />
+
+            <button id="filterBtn">Search</button>
+          </div>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Patient</th>
+                <th>Doctor</th>
+                <th>Hospital</th>
+                <th>Specialty</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+
+            <tbody id="appointmentTable"></tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+
+    <script src="../js/utils.js"></script>
+    <script src="../js/storage.js"></script>
+    <script src="../js/dashboard.js"></script>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+*{
+  font-family:'poppins';
+}
+.calendar-wrapper {
+  padding: 20px;
+}
+
+.calendar-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+.calendar-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.calendar-nav button {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #dcdcdc;
+  background: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#todayBtn {
+  width: auto;
+  padding: 0 14px;
+}
+
+#monthYear {
+  width: 170px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.day-header {
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 600;
+  background: #fafafa;
+  border-bottom: 1px solid #ddd;
+}
+
+.day {
+  height: 120px;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 8px;
+  position: relative;
+  background: #fff;
+}
+
+.day:nth-child(7n) {
+  border-right: none;
+}
+
+.day-number {
+  font-size: 13px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.today {
+  background: #d4e8ff;
+}
+
+.empty {
+  background: #f5f3f3;
+}
+
+.appointment {
+  background: #2ecc71;
+  color: #fff;
+  border-radius: 4px;
+  padding: 4px 6px;
+  margin-top: 6px;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+.appointment-name {
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.appointment-time {
+  font-size: 10px;
+  margin-top: 2px;
+}
+
+.appointment-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.appointment-actions button {
+  border: none;
+  background: #fff;
+  color: #2ecc71;
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+.appointment-doctor {
+  font-size: 10px;
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: 0.95;
+}
