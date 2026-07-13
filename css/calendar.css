@@ -3,18 +3,23 @@
 }
 .calendar-wrapper {
   padding: 20px;
+  width: 100%;
+  overflow-x: auto;
 }
 
 .calendar-toolbar {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   margin-bottom: 15px;
+  width: 100%;
 }
 
 .calendar-nav {
   display: flex;
   align-items: center;
   gap: 8px;
+  flex-wrap: wrap;
 }
 
 .calendar-nav button {
@@ -42,6 +47,7 @@
 #calendar {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
+  min-width: 900px;
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 6px;
@@ -60,7 +66,7 @@
 }
 
 .day {
-  height: 120px;
+  min-height: 120px;
   border-right: 1px solid #eee;
   border-bottom: 1px solid #eee;
   padding: 8px;
@@ -90,10 +96,11 @@
   background: #2ecc71;
   color: #fff;
   border-radius: 4px;
-  padding: 4px 6px;
+  padding: 5px 6px;
   margin-top: 6px;
   font-size: 12px;
   overflow: hidden;
+  word-break: break-word;
 }
 
 .appointment-name {
